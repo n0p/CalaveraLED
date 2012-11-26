@@ -1,0 +1,125 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020-021 strtok.save
+022-025 _Randseed
+026     d_r
+027     d_g
+028     d_b
+029     i_r
+02A     i_g
+02B     i_b
+02C     efecto
+02D     counter
+02E     efecto_coloraos.subiendo
+02F     efecto_coloraos.valor
+030     efecto_coloraos.c
+031     efecto_verdes.subiendo
+032     efecto_verdes.valor
+033     efecto_verdes.c
+034     efecto_azules.subiendo
+035     efecto_azules.valor
+036     efecto_azules.c
+037     efecto_azulverdes.subiendo
+038     efecto_azulverdes.valor
+039     efecto_azulverdes.c
+03A     efecto_coloraos2.subiendo
+03B     efecto_coloraos2.valor
+03C     efecto_coloraos2.c
+03D     efecto_blancos.subiendo
+03E     efecto_blancos.valor
+03F     efecto_blancos.c
+040     efecto_random.c
+041     efecto_subliminal.on
+042     efecto_subliminal.off
+043-044 efecto_subliminal.corta
+045-046 efecto_subliminal.larga
+047-048 efecto_subliminal.pausa
+049-04C @MUL3232.P1
+049     rand.@SCRATCH
+049     show_colors.@SCRATCH
+049     efecto_random.@SCRATCH
+049     efecto_subliminal.@SCRATCH
+049     MAIN.@SCRATCH
+04A     rand.@SCRATCH
+04A     show_colors.@SCRATCH
+04A     efecto_random.@SCRATCH
+04A     efecto_subliminal.@SCRATCH
+04B     @DIV88.P1
+04B     rand.@SCRATCH
+04B     show_colors.@SCRATCH
+04B     efecto_subliminal.@SCRATCH
+04C     @DIV88.P1
+04C     @delay_ms1.P2
+04C-04D @DIV1616.P3
+04C     rand.@SCRATCH
+04D-050 @MUL3232.P1
+04D     @DIV88.@SCRATCH
+04E-04F @DIV1616.P1
+050     @DIV1616.@SCRATCH
+051     @MUL3232.@SCRATCH
+052     @MUL3232.@SCRATCH
+053     @MUL3232.@SCRATCH
+054     @MUL3232.@SCRATCH
+055     @MUL3232.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+
+0207  @delay_ms1
+0108  @MUL3232
+00F8  rand
+00D3  @DIV1616
+0004  reset_low
+041D  show_colors
+0424  @DIV88
+01BE  show_colors2
+0023  efecto_coloraos
+007D  efecto_verdes
+0099  efecto_azules
+00B5  efecto_azulverdes
+0041  efecto_coloraos2
+005D  efecto_blancos
+015E  efecto_random
+021C  efecto_subliminal
+048B  MAIN
+04FD  @goto11518
+048B  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Files:
+    main.c
+    main.h
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\16F648A.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+
+Units:
+    C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F648A
+    Pointer Size:   16
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.err
+    Ext Symbols: C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.esym
+    INHX8:       C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.hex
+    Symbols:     C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.sym
+    List:        C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.lst
+    Debug/COFF:  C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.cof
+    Project:     C:\Users\n0p\Documents\My Dropbox\Calavera inti\main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.sta
